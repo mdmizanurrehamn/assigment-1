@@ -1,20 +1,15 @@
 #include<stdio.h>
-#include<math.h>
-void main()
+int main()
+   {
+int x,y;
+for(y=0;y<5;y++)
 {
-    int a,b;
-    for(a=0;a<=4;a++)
-    {
-        for(b=1;b<=20;b++)
-        {
-        if(a%2==0)
-            printf("*");
-        }
-        for(b=1;b<=10;b++)
-        {
-        if(a%2!=0)
-            printf("*0");
-        }
-        printf("\n");
-    }
+for(x=0;x<20;x++)
+if((y%2==0)||((x%2==0)&&(y%2==1)))
+printf("*");
+else
+printf("0");
+printf("\n");
+}   
+return 0;
 }

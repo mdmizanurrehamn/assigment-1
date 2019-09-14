@@ -1,20 +1,16 @@
+
 #include<stdio.h>
-#include<math.h>
-void main()
+int main()
+   {
+      int x,y;
+for(y=0;y<4;y++)
 {
-int a,b;
-    for(a=0;a<=4;a++)
-    {
-        for(b=1;b<=10;b++)
-        {
-        if(a%2==0)
-            printf("0*");
-        }
-        for(b=1;b<=10;b++)
-        {
-        if(a%2!=0)
-            printf("*0");
-        }
-        printf("\n");
-    }
+for(x=0;x<20;x++)
+if((x+y)%2==0)
+printf("0");
+else
+printf("*");
+printf("\n");
+}   
+return 0;
 }
